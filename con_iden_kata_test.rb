@@ -1,11 +1,22 @@
 require_relative "con_iden_kata.rb"
 require "minitest/autorun"
-class Con_iden_kata_test <
+class Consecutive_test <
 Minitest::Test
 
 
 def test_empty_arrays_return_zero
-   results =find_max_consecutive_identical_elements 0
+   results =find_max_consecutive_identical_elements([])
    assert_equal(0, results)
    end
-end
+
+def test_array_with_one_element
+     results = find_max_consecutive_identical_elements([1])
+	 assert_equal(1, results)
+end	 
+	 
+	 
+	 
+	 
+	 
+	 
+end	 
