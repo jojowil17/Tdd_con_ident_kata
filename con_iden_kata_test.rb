@@ -17,16 +17,24 @@ def test_array_with_two_non_identical_elements
     results = find_max_consecutive_identical_elements([1,2])
 	assert_equal(1, results)
 end
-	 
-	 def test_array_with_two_identical_elements
+
+ def test_array_with_two_identical_elements
 	    results = find_max_consecutive_identical_elements([1,1])
 		assert_equal(2, results)
 	 end
 	 
-	 def test_array_for_two_consecutive_elements_and_one_non_consecutive
+def test_array_for_two_consecutive_elements_and_one_non_consecutive
 	    results = find_max_consecutive_identical_elements([1,1,3])
         assert_equal(2,results)
 end
+	 
+def test_for_3_identical_elements_in_array
+	 results = find_max_consecutive_identical_elements([1,1,1])
+	 assert_equal(3, results)
+	 end
+	 
+	 
+	 
 	 
 	 
 end	 
